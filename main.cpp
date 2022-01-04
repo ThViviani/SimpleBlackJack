@@ -6,7 +6,7 @@
 #define HIT 'h'
 #define END 'q'
 
-void print_game_state(const Player& pl, const Player& dil, bool print_empty_lines);
+void print_game_state(const Player& pl, const Player& dil);
 
 int main() {
 
@@ -22,7 +22,7 @@ int main() {
 
     char answer = 0;
     while(answer != END) {
-        print_game_state(player, diller, answer);
+        print_game_state(player, diller);
 
         std::cout << "Stand(s) or Hit(h)? For quit enter type (q)." << std::endl;
         std::cin >> answer;
@@ -38,11 +38,11 @@ int main() {
         }
 
         if (player.get_hand_sum() == 21) {
-            print_game_state(player, diller, true);
+            print_game_state(player, diller);
             std::cout << "WIN!" << std::endl;
             break;
         } else if (player.get_hand_sum() > 21) {
-            print_game_state(player, diller, true);
+            print_game_state(player, diller);
             std::cout << "LOSE!" << std::endl;
             break;
         }
@@ -52,13 +52,9 @@ int main() {
 
 }
 
-void print_game_state(const Player& pl, const Player& dil, bool print_empty_lines) {
+void print_game_state(const Player& pl, const Player& dil) {
 
-    if (print_empty_lines){
-        for (int i = 1; i < 5; ++i) {
-            std::cout << std::endl;
-        }
-    }
+    printf("\e[1;1H\e[2J"); // clear console/terminal
 
     std::cout << "******************************************" << std::endl;
     std::cout << "Your sum:   " << pl.get_hand_sum()     << std::endl;
