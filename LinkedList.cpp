@@ -111,10 +111,10 @@ void LinkedList<T>::push_back(T data) {
 
 template<typename T>
 void LinkedList<T>::print_list() {
-    std::cout << "ls: ";
-    for (Node *cur = head; cur != nullptr; cur = cur->next) {
-        std::cout << cur->data << " ";
-    }
-    std::cout << std::endl;
+//    std::cout << "ls: ";
+//    for (Node *cur = head; cur != nullptr; cur = cur->next) {
+//        cur->data.print_discription();
+//    }
+//    std::cout << std::endl;
 }
 

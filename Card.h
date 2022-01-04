@@ -3,6 +3,7 @@
 
 #include "CardType.h"
 #include "Suit.h"
+#include <iostream>
 
 class Card {
 private:
@@ -10,6 +11,7 @@ private:
     CardType type;
     int value;
 public:
+    Card();
     Card(Suit s, CardType type, int val);
 };
 
