@@ -1,7 +1,7 @@
 #include "LinkedList.cpp"
+#include "Card.h"
 
 int main() {
-    LinkedList<int> ls;
-    std::cout << ls.size() << std::endl;
+    Card c(clubs, ACE, 10);
     return 0;
 }
