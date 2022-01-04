@@ -12,3 +12,7 @@ Card::Card(Suit suit, CardType type, int val) {
     this->value = val;
 }
 
+int Card::get_value() {
+    return this->value;
+}
+

@@ -13,6 +13,7 @@ private:
 public:
     Card();
     Card(Suit s, CardType type, int val);
+    int get_value();
 };
 
 

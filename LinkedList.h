@@ -1,0 +1,6 @@
+#ifndef BLACKJACK_LINKEDLIST_H
+#define BLACKJACK_LINKEDLIST_H
+
+#include "LinkedList.cpp"
+
+#endif //BLACKJACK_LINKEDLIST_H
