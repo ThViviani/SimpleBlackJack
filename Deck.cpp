@@ -59,3 +59,10 @@ void Deck::shuffle() {
 
 }
 
+Card Deck::get_card() {
+
+    Card tmp = this->ls.front();
+    this->ls.pop_front();
+    return tmp;
+
+}
