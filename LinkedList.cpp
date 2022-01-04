@@ -1,6 +1,3 @@
-#include <iostream>
-
-
 template<typename T>
 class LinkedList {
 
@@ -108,13 +105,3 @@ void LinkedList<T>::push_back(T data) {
 
     size_++;
 }
-
-template<typename T>
-void LinkedList<T>::print_list() {
-//    std::cout << "ls: ";
-//    for (Node *cur = head; cur != nullptr; cur = cur->next) {
-//        cur->data.print_discription();
-//    }
-//    std::cout << std::endl;
-}
-
