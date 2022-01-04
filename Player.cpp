@@ -6,7 +6,15 @@ Player::Player() {
     this->hand = LinkedList<Card>();
 }
 
-void Player::add_card(Card &card) {
+void Player::add_card(const Card& card) {
     this->hand.push_back(card);
     this->hand_summ += card.get_value();
+}
+
+int Player::get_hand_sum() const {
+    return this->hand_summ;
+}
+
+void Player::print_hand() const {
+    this->hand.print_list();
 }

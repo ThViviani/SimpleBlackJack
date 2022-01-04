@@ -12,7 +12,9 @@ private:
 
 public:
     Player();
-    void add_card(Card& card);
+    void add_card(const Card& card);
+    int get_hand_sum() const;
+    void print_hand() const;
 };
 
 

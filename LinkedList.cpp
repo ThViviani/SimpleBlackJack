@@ -1,3 +1,6 @@
+#include <iostream>
+
+
 template<typename T>
 class LinkedList {
 
@@ -8,7 +11,7 @@ public:
     void pop_front();
     void push_front(T data);
     void push_back(T data);
-    void print_list();
+    void print_list() const;
     int size();
     bool empty();
 
@@ -104,4 +107,13 @@ void LinkedList<T>::push_back(T data) {
     }
 
     size_++;
+}
+
+template<typename T>
+void LinkedList<T>::print_list() const{
+
+        for (Node *cur = head; cur != nullptr; cur = cur->next) {
+            std::cout << cur->data << " ";
+        }
+
 }
