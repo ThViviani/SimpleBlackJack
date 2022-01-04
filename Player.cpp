@@ -18,3 +18,7 @@ int Player::get_hand_sum() const {
 void Player::print_hand() const {
     this->hand.print_list();
 }
+
+Card Player::get_last_card() const{
+    return this->hand.front();
+}

@@ -15,6 +15,7 @@ public:
     void add_card(const Card& card);
     int get_hand_sum() const;
     void print_hand() const;
+    Card get_last_card() const;
 };
 
 

@@ -7,7 +7,7 @@ class LinkedList {
 public:
     LinkedList();
     ~LinkedList();
-    T front();
+    T front() const;
     void pop_front();
     void push_front(T data);
     void push_back(T data);
@@ -59,7 +59,7 @@ bool LinkedList<T>::empty() {
 }
 
 template<typename T>
-T LinkedList<T>::front() {
+T LinkedList<T>::front() const{
     if (head == nullptr) {
         return T();
     }

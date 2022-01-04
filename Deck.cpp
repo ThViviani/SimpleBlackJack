@@ -6,7 +6,7 @@ void random_swap(int cur, Card arr[]) {
 
     srand(time(0));
     Card tmp = arr[cur];
-    int new_index = rand() % 36;
+    int new_index = rand() % 52;
     arr[cur] = arr[new_index];
     arr[new_index] = tmp;
 
@@ -14,7 +14,7 @@ void random_swap(int cur, Card arr[]) {
 
 void Deck::create_deck() {
 
-    for (int val = 6; val <= 10; ++val) {
+    for (int val = 2; val <= 10; ++val) {
         ls.push_back(Card(hearts, NUMERIC, val));
         ls.push_back(Card(clubs, NUMERIC, val));
         ls.push_back(Card(diamonds, NUMERIC, val));
