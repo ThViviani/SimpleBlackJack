@@ -40,7 +40,8 @@ Deck::Deck() {
 
 void Deck::shuffle() {
 
-    Card arr[ls.size()];
+    const int deck_size = ls.size();
+    Card arr[deck_size];
 
     int arr_size = 0;
     while(!ls.empty()) {
