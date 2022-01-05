@@ -4,7 +4,6 @@
 
 void random_swap(int cur, Card arr[]) {
 
-    srand(time(0));
     Card tmp = arr[cur];
     int new_index = rand() % 52;
     arr[cur] = arr[new_index];
@@ -49,6 +48,7 @@ void Deck::shuffle() {
         ls.pop_front();
     }
 
+    srand(time(0));
     for (int i = 0; i < arr_size; ++i) {
         random_swap(i, arr);
     }
