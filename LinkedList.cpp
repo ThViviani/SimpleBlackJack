@@ -14,6 +14,7 @@ public:
     void print_list() const;
     int size();
     bool empty();
+    void clear();
 
 private:
 
@@ -117,3 +118,14 @@ void LinkedList<T>::print_list() const{
         }
 
 }
+
+template<typename T>
+void LinkedList<T>::clear() {
+
+    while(!empty()) {
+        pop_front();
+    }
+
+}
+
+

@@ -22,3 +22,11 @@ void Player::print_hand() const {
 Card Player::get_last_card() const{
     return this->hand.front();
 }
+
+void Player::new_game() {
+
+    this->hand_summ = 0;
+    this->score = 0;
+    this->hand.clear();
+
+}

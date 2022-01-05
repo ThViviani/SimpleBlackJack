@@ -1,0 +1,3 @@
+/Users/root1/Documents/TestDir/SimpleBlackJack/cmake-build-debug/CMakeFiles/rebuild_cache.dir
+/Users/root1/Documents/TestDir/SimpleBlackJack/cmake-build-debug/CMakeFiles/edit_cache.dir
+/Users/root1/Documents/TestDir/SimpleBlackJack/cmake-build-debug/CMakeFiles/BlackJack.dir

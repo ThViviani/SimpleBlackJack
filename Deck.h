@@ -9,12 +9,13 @@ void random_swap(int cur, Card arr[]);
 class Deck {
 private:
     LinkedList<Card> ls;
-    void create_deck();
 
 public:
     Deck();
     void shuffle();
     Card get_card();
+    void create_deck();
+    void clear();
 };
 
 

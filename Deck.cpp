@@ -66,3 +66,9 @@ Card Deck::get_card() {
     return tmp;
 
 }
+
+void Deck::clear() {
+
+    this->ls.clear();
+
+}
